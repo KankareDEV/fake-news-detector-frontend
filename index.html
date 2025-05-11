@@ -68,6 +68,10 @@
           body: JSON.stringify({ texts: [inputText] })
         });
 
+        if (!response.ok) {
+          throw new Error("HTTP error " + response.status);
+        }
+
         const data = await response.json();
         const prediction = data.predictions?.[0];
 
