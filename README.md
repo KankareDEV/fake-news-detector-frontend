@@ -39,5 +39,5 @@ Paste any article or sentence and click "Check". The app will tell you if the ne
 ```json
 POST /prod/predict
 {
-  "texts": ["This is a sample news article."]
+  "texts": ["UK Parliament Approves Brexit Deal After Heated Debate"]
 }
